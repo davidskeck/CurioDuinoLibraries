@@ -16,7 +16,6 @@ What's included
   * QTRSensors.h
 
 * Compass Libraries - https://github.com/pololu/lsm303-arduino
-  * Wire.h
   * LSM303.h
 
 Further reading
