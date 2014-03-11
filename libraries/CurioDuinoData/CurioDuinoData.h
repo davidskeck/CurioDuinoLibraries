@@ -49,12 +49,12 @@ public:
 
 	// Array to hold sensor pin for edge detections
 	unsigned int sensor_values[NUM_SENSORS];
-    // Automatically initialized to no emitter pin
-    // Side header lights on both sides always turned on
-    CurioDuinoReflectanceSensorArray sensors;
-    int battery;
-    boolean leftEdge, rightEdge, leftObstacle,
-    rightObstacle, middleObstacle;
-    String dataFormatted;
+	// Automatically initialized to no emitter pin
+	// Side header lights on both sides always turned on
+	CurioDuinoReflectanceSensorArray sensors;
+	int battery;
+	boolean leftEdge, rightEdge, leftObstacle,
+	rightObstacle, middleObstacle;
+	String dataFormatted;
 };
 #endif
