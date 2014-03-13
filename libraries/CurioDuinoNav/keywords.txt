@@ -12,4 +12,9 @@ CurioDuinoNav	KEYWORD1
 # Methods and Functions (KEYWORD2)
 #######################################
 
-  	KEYWORD2
+turnRight			KEYWORD2
+turnLeft			KEYWORD2
+turnAround			KEYWORD2
+goForward			KEYWORD2
+goReverse			KEYWORD2
+stopMoving			KEYWORD2

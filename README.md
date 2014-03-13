@@ -3,6 +3,8 @@ CurioDuinoLibraries
 
 All libraries necessary for CurioDuinoOBS - http://github.com/davidskeck/CurioDuinoOBS
 
+The folder "libraries" belongs in your Arduino sketch folder. If you already have a libraries folder, take all the folders inside of this libraries folder and copy them to your current libraries folder.
+
 What's included
 ===============
 

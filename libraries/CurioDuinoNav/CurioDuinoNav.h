@@ -17,10 +17,29 @@
 // Forward declaration of class
 class ZumoMotors;
 
+// Motor speeds
+#define REVERSE_SPEED     75 // 0 is stopped, 400 is full speed
+#define TURN_SPEED        200
+#define FORWARD_SPEED     75
+
+// Almost makes 90 degree turn
+// todo: change to compass nav
+#define REVERSE_DURATION  400 // ms
+#define TURN_DURATION     400 // ms
+
 class CurioDuinoNav
 {
 public:
 
+	// Member functions
+	void turnRight();
+	void turnLeft();
+	void turnAround();
+	void goForward();
+	void goReverse();
+	void stopMoving();
 	
+	// Data members
+	ZumoMotors motors;
 };
 #endif
