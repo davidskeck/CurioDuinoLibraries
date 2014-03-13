@@ -9,6 +9,7 @@ What's included
 ===============
 
 * Custom Libraries
+  * CurioDuinoNav.h
   * CurioDuinoData.h 
   * CurioDuinoReflectanceArray.h
 
