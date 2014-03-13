@@ -13,12 +13,12 @@ What's included
   * CurioDuinoData.h 
   * CurioDuinoReflectanceArray.h
 
-* Zumo Shield Libraries - https://github.com/pololu/zumo-shield
+* Zumo Shield Libraries - http://github.com/pololu/zumo-shield
   * ZumoBuzzer.h
   * ZumoMotors.h
   * QTRSensors.h
 
-* Compass Libraries - https://github.com/pololu/lsm303-arduino
+* Compass Libraries - http://github.com/pololu/lsm303-arduino
   * LSM303.h
 
 Further reading
