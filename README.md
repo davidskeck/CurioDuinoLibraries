@@ -11,6 +11,7 @@ What's included
 * Custom Libraries
   * CurioDuinoNav.h
   * CurioDuinoData.h 
+  * CurioDuinoComm.h
   * CurioDuinoReflectanceArray.h
 
 * Zumo Shield Libraries - http://github.com/pololu/zumo-shield
