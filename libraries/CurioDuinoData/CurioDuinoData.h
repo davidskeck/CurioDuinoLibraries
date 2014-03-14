@@ -35,6 +35,7 @@ class CurioDuinoData
 {
 public:
 
+	// Member functions
 	// Update all sensor data
 	void update();
 
@@ -44,6 +45,8 @@ public:
 	// Prepare string to be sent
 	void prepareData();
 
+
+	// Data members
 	// Public to adhere to NASA's MSL rules of
 	// only void return functions
 
