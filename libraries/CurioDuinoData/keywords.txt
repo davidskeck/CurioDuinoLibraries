@@ -13,5 +13,4 @@ CurioDuinoData	KEYWORD1
 #######################################
 
 update  	KEYWORD2
-send    	KEYWORD2
 prepareData KEYWORD2

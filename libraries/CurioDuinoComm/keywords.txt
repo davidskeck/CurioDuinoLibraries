@@ -12,4 +12,4 @@ CurioDuinoComm	KEYWORD1
 # Methods and Functions (KEYWORD2)
 #######################################
 
-placeholder  	KEYWORD2
+send    	KEYWORD2

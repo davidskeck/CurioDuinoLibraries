@@ -46,9 +46,3 @@ void CurioDuinoData::prepareData()
   dataFormatted += rightObstacle;
   dataFormatted += "RO";
 }
-
-void CurioDuinoData::send()
-{ 
-  // send string of sensor data
-  Serial.println(dataFormatted);
-}

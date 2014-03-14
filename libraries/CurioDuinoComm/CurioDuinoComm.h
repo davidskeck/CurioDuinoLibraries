@@ -14,10 +14,18 @@
 // Include arduino specific function
 #include <Arduino.h>
 
+// Forward declaration of class
+class ZumoBuzzer;
+
 class CurioDuinoComm
 {
 public:
 
-	
+	// Member functions
+	// Send data string
+	void send(String);
+
+	// Data members
+	ZumoBuzzer buzzer;
 };
 #endif

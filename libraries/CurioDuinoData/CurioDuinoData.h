@@ -39,12 +39,8 @@ public:
 	// Update all sensor data
 	void update();
 
-	// Send string containing formatted data
-	void send();
-
 	// Prepare string to be sent
 	void prepareData();
-
 
 	// Data members
 	// Public to adhere to NASA's MSL rules of
