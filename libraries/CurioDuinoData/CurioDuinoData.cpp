@@ -4,7 +4,7 @@
  * Implementation of CurioDuinoData
  * For use with the CurioDuinoOBS software.
  * More information here: http://davidskeck.wordpress.com
- * or here http://github.com/davidskeck/CurioDuinoOBS
+ * or here http://github.com/davidskeck/CurioDuinoLibraries
  */
 
 // Include reflectance array class
@@ -45,4 +45,9 @@ void CurioDuinoData::prepareData()
   dataFormatted += "MO";
   dataFormatted += rightObstacle;
   dataFormatted += "RO";
+}
+
+void CurioDuinoData::send()
+{
+  Serial.println(dataFormatted);
 }

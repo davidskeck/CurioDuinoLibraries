@@ -4,7 +4,7 @@
  * Library header file for CurioDuinoData implementation
  * For use with the CurioDuinoOBS software.
  * More information here: http://davidskeck.wordpress.com
- * or here http://github.com/davidskeck/CurioDuinoOBS
+ * or here http://github.com/davidskeck/CurioDuinoLibraries
  */
 
 // Macro guard
@@ -38,6 +38,9 @@ public:
 	// Member functions
 	// Update all sensor data
 	void update();
+
+	// Send data
+	void send();
 
 	// Prepare string to be sent
 	void prepareData();
