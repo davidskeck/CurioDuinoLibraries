@@ -19,6 +19,8 @@ class ZumoBuzzer;
 
 class CurioDuinoComm
 {
+	// Public to adhere to NASA's MSL rules of
+	// only void return functions
 public:
 
 	// Member functions
