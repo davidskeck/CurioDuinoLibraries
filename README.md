@@ -13,7 +13,7 @@ What's included
   * CurioDuinoData.h 
   * CurioDuinoReflectanceArray.h
 
-* NilRTOS Libraries - https://code.google.com/p/rtoslibs/
+* NilRTOS Libraries - http://code.google.com/p/rtoslibs/
   * NilAnalog.h
   * NilRTOS.h
   * TwiMaster.h
