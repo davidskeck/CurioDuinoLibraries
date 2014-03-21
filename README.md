@@ -13,6 +13,12 @@ What's included
   * CurioDuinoData.h 
   * CurioDuinoReflectanceArray.h
 
+* NilRTOS Libraries - https://code.google.com/p/rtoslibs/
+  * NilAnalog.h
+  * NilRTOS.h
+  * TwiMaster.h
+  * NilTimer1.h
+
 * Zumo Shield Libraries - http://github.com/pololu/zumo-shield
   * ZumoBuzzer.h
   * ZumoMotors.h
