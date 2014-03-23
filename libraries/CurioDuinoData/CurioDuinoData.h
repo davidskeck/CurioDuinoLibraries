@@ -36,6 +36,10 @@ class CurioDuinoData
 public:
 
 	// Member functions
+
+	// Constructor
+	CurioDuinoData();
+
 	// Update all sensor data
 	void update();
 
@@ -45,12 +49,15 @@ public:
 	// Prepare string to be sent
 	void prepareData();
 
+	void receive();
+
 	// Data members
 	// Public to adhere to NASA's MSL rules of
 	// only void return functions
 
 	// Array to hold sensor pin for edge detections
 	unsigned int sensor_values[NUM_SENSORS];
+	
 	// Automatically initialized to no emitter pin
 	// Side header lights on both sides always turned on
 	CurioDuinoReflectanceSensorArray sensors;
@@ -58,5 +65,7 @@ public:
 	boolean leftEdge, rightEdge, leftObstacle,
 	rightObstacle, middleObstacle;
 	String dataFormatted;
+	// Start/stop signal
+	boolean isStarted;
 };
 #endif

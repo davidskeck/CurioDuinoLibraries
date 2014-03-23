@@ -13,6 +13,11 @@
 // Include header file
 #include "CurioDuinoData.h"
 
+CurioDuinoData::CurioDuinoData()
+{
+  isStarted = false;
+}
+
 void CurioDuinoData::update()
 {
   // update edge sensors
@@ -50,4 +55,12 @@ void CurioDuinoData::prepareData()
 void CurioDuinoData::send()
 {
   Serial.println(dataFormatted);
+}
+
+void CurioDuinoData::receive()
+{
+  if (Serial.available() > 0)
+  {
+    isStarted = Serial.read();
+  }
 }
