@@ -31,6 +31,12 @@ class CurioDuinoReflectanceSensorArray;
 #define RIGHT_OBST_SENSOR  17
 #define LEFT_OBST_SENSOR 14
 
+// Motor speed and direction pins
+#define PWM_L 10
+#define PWM_R 9
+#define DIR_L 8
+#define DIR_R 7
+
 class CurioDuinoData
 {
 public:
@@ -61,9 +67,9 @@ public:
 	// Automatically initialized to no emitter pin
 	// Side header lights on both sides always turned on
 	CurioDuinoReflectanceSensorArray sensors;
-	int battery;
+	int battery, leftSpeed, rightSpeed;
 	boolean leftEdge, rightEdge, leftObstacle,
-	rightObstacle, middleObstacle;
+	rightObstacle, middleObstacle, leftDirection, rightDirection;
 	String dataFormatted;
 	// Start/stop signal
 	boolean isStarted;
