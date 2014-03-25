@@ -69,7 +69,7 @@ public:
 	CurioDuinoReflectanceSensorArray sensors;
 	int battery, leftSpeed, rightSpeed;
 	boolean leftEdge, rightEdge, leftObstacle,
-	rightObstacle, middleObstacle, leftDirection, rightDirection;
+	rightObstacle, middleObstacle, leftForward, rightForward;
 	String dataFormatted;
 	// Start/stop signal
 	boolean isStarted;
