@@ -14,6 +14,13 @@
 // Include arduino specific function
 #include <Arduino.h>
 
+// Use tiny unbuffered NilRTOS NilSerial library.
+#include <NilSerial.h>
+
+// Macro to redefine Serial as NilSerial to save RAM.
+// Remove definition to use standard Arduino Serial.
+#define Serial NilSerial
+
 // Forward declaration of class
 class CurioDuinoReflectanceSensorArray;
 
