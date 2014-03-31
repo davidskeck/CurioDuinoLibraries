@@ -24,10 +24,6 @@ What's included
   * ZumoMotors.h
   * QTRSensors.h
 
-* Compass Libraries - http://github.com/pololu/lsm303-arduino
-  * LSM303.h
-  * For this class, the Wire.h library is also needed, but not included in this repo. It is standard with the Arduino IDE installation.
-
 Further reading
 ===============
 
