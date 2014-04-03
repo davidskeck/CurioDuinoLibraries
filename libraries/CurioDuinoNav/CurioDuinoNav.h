@@ -20,7 +20,6 @@ class ZumoMotors;
 // Motor speeds
 #define REVERSE_SPEED     75 // 0 is stopped, 400 is full speed
 #define TURN_SPEED        200
-#define FORWARD_SPEED     0
 
 // Almost makes 90 degree turn
 // todo: change to compass nav
@@ -36,18 +35,25 @@ class ZumoMotors;
 
 class CurioDuinoNav
 {
+private:
+	int forwardSpeed;
 	// Public to adhere to NASA's MSL rules of
 	// only void return functions
 public:
 
 	// Member functions
+	// Serves as a constructor
+	// because Arduino constructors
+	// are not advised.
+	void begin();
 	void turnRight();
 	void turnLeft();
 	void turnAround();
 	void goForward();
 	void goReverse();
 	void stopMoving();
-	
+	void setSpeed(int newSpeed);
+
 	// Data members
 	ZumoMotors motors;
 };

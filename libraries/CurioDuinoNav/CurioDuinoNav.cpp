@@ -13,6 +13,11 @@
 // Include header file
 #include "CurioDuinoNav.h"
 
+void CurioDuinoNav::begin()
+{
+  forwardSpeed = 0;
+}
+
 void CurioDuinoNav::turnLeft()
 {
   motors.setSpeeds(-TURN_SPEED, TURN_SPEED);
@@ -33,7 +38,7 @@ void CurioDuinoNav::turnAround()
 
 void CurioDuinoNav::goForward()
 {
-  motors.setSpeeds(FORWARD_SPEED, FORWARD_SPEED);
+  motors.setSpeeds(forwardSpeed, forwardSpeed);
 }
 
 void CurioDuinoNav::goReverse()
@@ -45,4 +50,11 @@ void CurioDuinoNav::goReverse()
 void CurioDuinoNav::stopMoving()
 {
   motors.setSpeeds(0, 0);
+}
+
+void CurioDuinoNav::setSpeed(int newSpeed)
+{
+  // Max speed is 400
+  // Bounds checking done in ZumoMotors library
+  forwardSpeed = newSpeed;
 }
