@@ -25,18 +25,19 @@ class ZumoMotors;
 // todo: change to compass nav
 #define REVERSE_DURATION  400 // ms
 
-// Turn duration should be tuned to
-// battery life. Current readings
-// at reading of 715 on battery pin
-// duration of 375 is 90 degrees.
-// A reading of 700, the duration
-// must be 390
-#define TURN_DURATION     390 // ms
-
 class CurioDuinoNav
 {
 private:
 	int forwardSpeed;
+
+	// Turn duration should be tuned to
+	// battery life. Current readings
+	// at reading of 715 on battery pin
+	// duration of 375 is 90 degrees.
+	// A reading of 700, the duration
+	// must be 390
+	int turnDuration;
+
 	// Public to adhere to NASA's MSL rules of
 	// only void return functions
 public:

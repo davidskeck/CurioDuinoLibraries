@@ -16,18 +16,19 @@
 void CurioDuinoNav::begin()
 {
   forwardSpeed = 0;
+  turnDuration = 370;
 }
 
 void CurioDuinoNav::turnLeft()
 {
   motors.setSpeeds(-TURN_SPEED, TURN_SPEED);
-  delay(TURN_DURATION);
+  delay(turnDuration);
 }
 
 void CurioDuinoNav::turnRight()
 {
   motors.setSpeeds(TURN_SPEED, -TURN_SPEED);
-  delay(TURN_DURATION);
+  delay(turnDuration);
 }
 
 void CurioDuinoNav::turnAround()
