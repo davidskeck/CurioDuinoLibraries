@@ -53,6 +53,11 @@ public:
 	// Constructor
 	CurioDuinoData();
 
+	// Begin member to initialize data
+	// Because Arduino doesn't work well
+	// with just C++ constructors
+	void begin();
+
 	// Update all sensor data
 	void update();
 
@@ -62,6 +67,7 @@ public:
 	// Prepare string to be sent
 	void prepareData();
 
+	// Recieve Data
 	void receive();
 
 	// Data members

@@ -13,6 +13,12 @@
 // Include header file
 #include "CurioDuinoData.h"
 
+void CurioDuinoData::begin()
+{
+  byte pins[] = {4, 5};
+  sensors.init(pins, NUM_SENSORS, 2000, QTR_NO_EMITTER_PIN);
+}
+
 CurioDuinoData::CurioDuinoData()
 {
   isStarted = false;
