@@ -25,6 +25,8 @@ class ZumoMotors;
 // todo: change to compass nav
 #define REVERSE_DURATION  400 // ms
 
+#define TURN_DURATION  330
+
 class CurioDuinoNav
 {
 private:
@@ -49,7 +51,6 @@ public:
 	void begin();
 	void turnRight();
 	void turnLeft();
-	void turnAround();
 	void goForward();
 	void goReverse();
 	void stopMoving();
