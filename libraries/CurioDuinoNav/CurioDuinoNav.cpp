@@ -16,7 +16,7 @@
 void CurioDuinoNav::begin()
 {
   forwardSpeed = 0;
-  turnDuration = 340;
+  turnDuration = 320;
 }
 
 void CurioDuinoNav::turnLeft()

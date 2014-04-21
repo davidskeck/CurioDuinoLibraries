@@ -34,8 +34,6 @@ void CurioDuinoData::update()
   rightObstacle = (!digitalRead(RIGHT_OBST_SENSOR));
   leftForward = (!digitalRead(DIR_L));
   rightForward = (!digitalRead(DIR_R));
-  rightSpeed =  analogRead(PWM_R);
-  leftSpeed = analogRead(PWM_L);
 
   prepareData();
 }
@@ -60,10 +58,6 @@ void CurioDuinoData::prepareData()
   dataFormatted += "LF";
   dataFormatted += rightForward;
   dataFormatted += "RF";
-  dataFormatted += rightSpeed;
-  dataFormatted += "RS";
-  dataFormatted += leftSpeed;
-  dataFormatted += "LS";
 }
 
 void CurioDuinoData::send()
