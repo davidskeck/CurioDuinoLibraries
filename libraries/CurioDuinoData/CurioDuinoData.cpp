@@ -15,13 +15,9 @@
 
 void CurioDuinoData::begin()
 {
+  isStarted = false;
   byte pins[] = {4, 5};
   sensors.init(pins, NUM_SENSORS, 2000, QTR_NO_EMITTER_PIN);
-}
-
-CurioDuinoData::CurioDuinoData()
-{
-  isStarted = false;
 }
 
 void CurioDuinoData::update()

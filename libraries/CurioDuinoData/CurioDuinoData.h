@@ -50,9 +50,6 @@ public:
 
 	// Member functions
 
-	// Constructor
-	CurioDuinoData();
-
 	// Begin member to initialize data
 	// Because Arduino doesn't work well
 	// with just C++ constructors
