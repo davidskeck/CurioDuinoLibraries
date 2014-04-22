@@ -16,6 +16,7 @@
 void CurioDuinoData::begin()
 {
   isStarted = false;
+  newSetSpeed = 75;
   byte pins[] = {4, 5};
   sensors.init(pins, NUM_SENSORS, 2000, QTR_NO_EMITTER_PIN);
 }
@@ -68,7 +69,23 @@ void CurioDuinoData::send()
 void CurioDuinoData::receive()
 {
   if (Serial.available() > 0)
-  {
-    isStarted = Serial.read();
+  { 
+    // Capture serial read
+    int serialIn;
+
+    serialIn = Serial.read();
+
+    // Check if less than minimum speed
+    // If so, it is a boolean signal since
+    // GUI will only send one of two signals
+    if (serialIn < 75)
+    {
+      isStarted = serialIn;
+    }
+    // Not boolean, must be speed
+    else
+    {
+      newSetSpeed = serialIn;
+    }
   }
 }

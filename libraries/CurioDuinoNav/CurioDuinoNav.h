@@ -29,17 +29,6 @@ class ZumoMotors;
 
 class CurioDuinoNav
 {
-private:
-	int forwardSpeed;
-
-	// Turn duration should be tuned to
-	// battery life. Current readings
-	// at reading of 715 on battery pin
-	// duration of 375 is 90 degrees.
-	// A reading of 700, the duration
-	// must be 390
-	int turnDuration;
-
 	// Public to adhere to NASA's MSL rules of
 	// only void return functions
 public:
@@ -54,9 +43,9 @@ public:
 	void goForward();
 	void goReverse();
 	void stopMoving();
-	void setSpeed(int newSpeed);
 
 	// Data members
 	ZumoMotors motors;
+	int forwardSpeed;
 };
 #endif

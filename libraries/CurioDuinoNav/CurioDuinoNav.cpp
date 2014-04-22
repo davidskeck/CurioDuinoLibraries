@@ -45,10 +45,3 @@ void CurioDuinoNav::stopMoving()
 {
   motors.setSpeeds(0, 0);
 }
-
-void CurioDuinoNav::setSpeed(int newSpeed)
-{
-  // Max speed is 400
-  // Bounds checking done in ZumoMotors library
-  forwardSpeed = newSpeed;
-}

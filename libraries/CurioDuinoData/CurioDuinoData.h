@@ -77,7 +77,7 @@ public:
 	// Automatically initialized to no emitter pin
 	// Side header lights on both sides always turned on
 	CurioDuinoReflectanceSensorArray sensors;
-	int battery;
+	int battery, newSetSpeed;
 	boolean leftEdge, rightEdge, leftObstacle,
 	rightObstacle, middleObstacle, leftForward, rightForward;
 	String dataFormatted;
