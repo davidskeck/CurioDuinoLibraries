@@ -27,6 +27,8 @@ class ZumoMotors;
 
 #define TURN_DURATION  300
 
+#define RANDOM_VARIANCE 100
+
 class CurioDuinoNav
 {
 	// Public to adhere to NASA's MSL rules of
