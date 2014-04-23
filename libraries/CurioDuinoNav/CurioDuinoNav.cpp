@@ -21,17 +21,13 @@ void CurioDuinoNav::begin()
 void CurioDuinoNav::turnLeft()
 {
   motors.setSpeeds(-TURN_SPEED, TURN_SPEED);
-  // Random turn time from 300 - 400
-  int rand = random (1, RANDOM_VARIANCE+1);
-  delay(TURN_DURATION + rand);
+  delay(TURN_DURATION);
 }
 
 void CurioDuinoNav::turnRight()
 {
   motors.setSpeeds(TURN_SPEED, -TURN_SPEED);
-  // Randum turn time from 300 - 400
-  int rand = random (1, RANDOM_VARIANCE+1);
-  delay(TURN_DURATION + rand);
+  delay(TURN_DURATION);
 }
 
 void CurioDuinoNav::goForward()
