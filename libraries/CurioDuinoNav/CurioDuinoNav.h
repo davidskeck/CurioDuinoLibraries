@@ -21,11 +21,9 @@ class ZumoMotors;
 #define REVERSE_SPEED     75 // 0 is stopped, 400 is full speed
 #define TURN_SPEED        200
 
-// Almost makes 90 degree turn
-// todo: change to compass nav
-#define REVERSE_DURATION  400 // ms
-
-#define TURN_DURATION  350
+// Duration of movements
+#define REVERSE_DURATION  750 // ms
+#define TURN_DURATION  400
 
 class CurioDuinoNav
 {
