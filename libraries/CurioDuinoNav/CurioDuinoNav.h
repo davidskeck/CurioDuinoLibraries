@@ -23,7 +23,8 @@ class ZumoMotors;
 
 // Duration of movements
 #define REVERSE_DURATION  750 // ms
-#define TURN_DURATION  400
+#define EDGE_TURN_DURATION  440
+#define OBSTACLE_TURN_DURATION 340
 
 class CurioDuinoNav
 {
@@ -36,8 +37,8 @@ public:
 	// because Arduino constructors
 	// are not advised.
 	void begin();
-	void turnRight();
-	void turnLeft();
+	void turnRight(int turnDuration);
+	void turnLeft(int turnDuration);
 	void goForward();
 	void goReverse();
 	void stopMoving();
