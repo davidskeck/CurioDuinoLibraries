@@ -20,7 +20,6 @@ What's included
   * NilTimer1.h
 
 * Zumo Shield Libraries - http://github.com/pololu/zumo-shield
-  * ZumoBuzzer.h
   * ZumoMotors.h
   * QTRSensors.h
 
